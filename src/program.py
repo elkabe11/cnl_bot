@@ -71,15 +71,20 @@ while True:
             if event.code == ecodes.REL_Y:
                 if event.value <= -2:
                     atras()
+                    
                 elif event.value >= 2:
                     adelante()
+                    
                 else:
                     parar()
+                    
             if event.code == ecodes.REL_X:
                 if event.value <= -2:
                     derecha()
+                    
                 elif event.value >= 2:
                     izquierda()
+                    
                 else:
                     parar()
 
