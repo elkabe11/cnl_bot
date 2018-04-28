@@ -72,7 +72,7 @@ while True:
                 if event.value <= -2:
                     atras()
                 elif event.value >= 2:
-                    adelante()
+                    parar()
                 else:
                     adelante()
             if event.code == ecodes.REL_X:
@@ -81,6 +81,6 @@ while True:
                 elif event.value >= 2:
                     izquierda()
                 else:
-                    adelante()
+                    parar()
 
     n.notify("WATCHDOG=1")
