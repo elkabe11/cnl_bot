@@ -72,9 +72,9 @@ while True:
                 if event.value <= -2:
                     atras()
                 elif event.value >= 2:
-                    parar()
-                else:
                     adelante()
+                else:
+                    parar()
             if event.code == ecodes.REL_X:
                 if event.value <= -2:
                     derecha()
